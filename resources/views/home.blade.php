@@ -8,6 +8,7 @@
     @vite(['resources/js/app.js'])
 </head>
 <body>
-    <button class="btn btn-success">Hello</button>
+    @include('/frequently-used/header')
+    @include('/frequently-used/footer')
 </body>
 </html>
