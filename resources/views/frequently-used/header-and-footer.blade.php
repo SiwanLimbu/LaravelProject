@@ -20,30 +20,24 @@
 </head>
 
 <body>
-    <nav>
-        <div class="navbar-main-div">
-            <h1>B.</h1>
-            <div class="nav-link">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="cart-box">
-                <li>
-                    <ion-icon name="cart" class="cart"></ion-icon>
-                </li>
-                <li><a href="#" class="sign-in-link">
-                        <ion-icon name="person-outline"></ion-icon><span style="margin-left: 5px;">sign in</span>
-                    </a></li>
-                <li><a href="#" class="log-in-link">
-                        <ion-icon name="log-in-outline"></ion-icon><span style="margin-left: 5px;">login</span>
-                    </a></li>
-            </div>
+<nav>
+            <div class="navbar-main-div">
+                <h1>B.</h1>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="cart-box">
+                    <li><ion-icon name="cart" class="cart"></ion-icon></li>
+                    <li><a href="#" class="sign-in-link"><ion-icon name="person-outline"></ion-icon><span style="margin-left: 5px;">sign in</span></a></li>
+                    <li><a href="#" class="log-in-link"><ion-icon name="log-in-outline"></ion-icon><span style="margin-left: 5px;">login</span></a></li>
+                </div>
 
-        </div>
+            </div>
     </nav>
     @yield('other-content');
     <footer class="footer">
