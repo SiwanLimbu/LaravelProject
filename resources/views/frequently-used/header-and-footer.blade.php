@@ -16,73 +16,79 @@
     <!-- css link -->
     <link rel="stylesheet" href="css/header-and-footer-style.css">
     <title>@yield('title')</title>
-   
+
 </head>
 
 <body>
-<nav>
-            <div class="navbar-main-div">
-                <h1>B.</h1>
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="cart-box">
-                    <li><ion-icon name="cart" class="cart"></ion-icon></li>
-                    <li><a href="#" class="sign-in-link"><ion-icon name="person-outline"></ion-icon><span style="margin-left: 5px;">sign in</span></a></li>
-                    <li><a href="#" class="log-in-link"><ion-icon name="log-in-outline"></ion-icon><span style="margin-left: 5px;">login</span></a></li>
-                </div>
-
+    <nav>
+        <div class="navbar-main-div">
+            <h1>B.</h1>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
+            <div class="cart-box">
+                <li>
+                    <ion-icon name="cart" class="cart"></ion-icon>
+                </li>
+                <li><a href="#" class="sign-in-link">
+                        <ion-icon name="person-outline"></ion-icon><span style="margin-left: 5px;">sign in</span>
+                    </a></li>
+                <li><a href="#" class="log-in-link">
+                        <ion-icon name="log-in-outline"></ion-icon><span style="margin-left: 5px;">login</span>
+                    </a></li>
+            </div>
+
+        </div>
     </nav>
     @yield('other-content');
     <footer class="footer">
-  	 <div class="container">
-  	 	<div class="footer-row">
-  	 		<div class="footer-col">
-  	 			<h4>Quick Link</h4>
-  	 			<ul>
-  	 				<li><a href="#">Home</a></li>
-  	 				<li><a href="#">Menu</a></li>
-  	 				<li><a href="#">Our Story</a></li>
-  	 				<li><a href="#">Contact Us</a></li>
-  	 			</ul>
-  	 		</div>
-			   <div class="footer-col">
-				<h4>Our menu</h4>
-				<ul>
-					<li><a href="#">Burger</a></li>
-					<li><a href="#">Pizza</a></li>
-					<li><a href="#">Drinks</a></li>
-				</ul>
-			</div>
-  	 		<div class="footer-col">
-  	 			<h4>Get help</h4>
-  	 			<ul>
-  	 				<li><a href="#">FAQ</a></li>
-  	 				<li><a href="#">Terms & conditions</a></li>
-  	 				<li><a href="#">Privacy policy</a></li>
-  	 				<li><a href="#">order status</a></li>
-  	 				<li><a href="#">payment options</a></li>
-  	 			</ul>
-  	 		</div>
-  	 	
-  	 		<div class="footer-col">
-  	 			<h4>Follow us</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-  	 			</div>
-  	 		</div>
-  	 	</div>
-  	 </div>
-  </footer>
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our menu</h4>
+                    <ul>
+                        <li><a href="#">Burger</a></li>
+                        <li><a href="#">Pizza</a></li>
+                        <li><a href="#">Drinks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
