@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/favicon/favicon1.ico" type="image/x-icon">
     <title>Login</title>
      <style>
         * {
@@ -65,6 +65,7 @@
             width: 42%;
         }
      </style>
+     @vite(['resources/js/app.js'])
 </head>
 <body>
 
@@ -99,7 +100,7 @@
                     </div>
                 </div>
                 <button class="btn1 btn-login-google"><i class="fa fa-google" style="font-size:18px;margin-right:8px;"></i>Continue With Google</button>
-                <p class="mt-3">No account! <a href="#" style="text-decoration: none;">Create one</a></p>
+                <p class="mt-3">No account! <a href="{{url('/signup')}}" style="text-decoration: none;">Create one</a></p>
     
             </div>
     

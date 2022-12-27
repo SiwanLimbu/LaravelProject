@@ -14,8 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- css link -->
-    <link rel="stylesheet" href="css/header-and-footer-style.css">
+    <link rel="stylesheet" href="/css/header-and-footer-style.css">
     <title>@yield('title')</title>
+    <link rel="shortcut icon" href="/favicon/favicon1.ico" type="image/x-icon">
 
 </head>
 
@@ -35,10 +36,10 @@
                 <li>
                     <ion-icon name="cart" class="cart"></ion-icon>
                 </li>
-                <li><a href="#" class="sign-in-link">
+                <li><a href="{{url('/signup')}}" class="sign-in-link">
                         <ion-icon name="person-outline"></ion-icon><span style="margin-left: 5px;">sign in</span>
                     </a></li>
-                <li><a href="#" class="log-in-link">
+                <li><a href="{{url('/login')}}" class="log-in-link">
                         <ion-icon name="log-in-outline"></ion-icon><span style="margin-left: 5px;">login</span>
                     </a></li>
             </div>
