@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,5 +26,6 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup-page');
 });
-
+Route::get('auth/google',[CustomerController::class,'redirect'])->name('google-auth');
+Route::get('auth/google/call-back',[CustomerController::class,'callbackGoogle']);
 

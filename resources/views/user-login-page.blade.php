@@ -99,7 +99,7 @@
                         <hr class="border-1">
                     </div>
                 </div>
-                <button class="btn1 btn-login-google"><i class="fa fa-google" style="font-size:18px;margin-right:8px;"></i>Continue With Google</button>
+                <a href="{{route('google-auth')}}"><button class="btn1 btn-login-google"><i class="fa fa-google" style="font-size:18px;margin-right:8px;"></i>Continue With Google</button></a>
                 <p class="mt-3">No account! <a href="{{url('/signup')}}" style="text-decoration: none;">Create one</a></p>
     
             </div>
