@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('customer-name');
             $table->string('email')->unique();
             $table->string('password')->nullable();
+            $table->string('img',255)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

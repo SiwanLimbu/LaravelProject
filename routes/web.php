@@ -30,6 +30,8 @@ Route::get('/signup', function () {
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
+Route::post('/login',[CustomerController::class,'loginUser'])->name('login-user');
+Route::post('/signup',[CustomerController::class,'registerUser'])->name('register-user');
 
 Route::get('auth/google',[CustomerController::class,'redirect'])->name('google-auth');
 Route::get('auth/google/call-back',[CustomerController::class,'callbackGoogle']);

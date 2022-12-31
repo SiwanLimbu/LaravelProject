@@ -59,20 +59,34 @@
                 <img src="/img/pizza.jpg" alt="">
             </div>
             <div class="p-5">
+            @if(Session::has('fail'))
+            <div class="alert text-center alert-danger" role="alert">
+            {{Session::get('fail')}}
+            </div>
+            @endif
+            @if(Session::has('success'))
+            <div class="alert text-center alert-success" role="alert">
+            {{Session::get('success')}}
+            </div>
+            @endif
                 <h2 class="mb-0">Create Account</h1>
                 <p style="margin-left: 5px;">It's is simple and fast</p>
-                <form>
+                <form action="{{route('register-user')}}" method="POST">
+                    @csrf
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">User name</label>
-                        <input type="email" class="form-control"  name="email">
+                        <input type="text" class="form-control"  name="customerName">
+                        <span style="color: red;"> @error('customerName'){{$message}}@enderror</span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                        <input type="email" class="form-control"  aria-describedby="emailHelp" name="email">
+                        <span style="color: red;"> @error('email'){{$message}}@enderror</span>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control"  name="password" id="myPassword">
+                        <input type="password" class="form-control"  name="password">
+                        <span style="color: red;"> @error('password'){{$message}}@enderror</span>
                     </div>
                     <div>
                         <input type="checkbox" class="form-check-input" onclick="showPassword();"><span style="margin-left:5px;font-size:13px;">Show Password</span>
@@ -87,10 +101,11 @@
      </section>
      <script>
         const inputValue=document.getElementsByTagName("input");
-        for(var i=0;i<=1;i++)
+        console.log(inputValue);
+        for(var i=1;i<=3;i++)
         {
         inputValue[i].addEventListener('input',function()  {
-                if(inputValue[0].value.length > 0 && inputValue[1].value.length > 0)
+                if((inputValue[1].value.length > 0) && (inputValue[2].value.length > 0) && (inputValue[3].value.length > 0))
                 {
                     document.getElementById("btn-login").style.backgroundColor="#D9A47A";
                 }
