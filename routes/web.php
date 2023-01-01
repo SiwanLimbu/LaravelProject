@@ -36,3 +36,12 @@ Route::post('/signup',[CustomerController::class,'registerUser'])->name('registe
 Route::get('auth/google',[CustomerController::class,'redirect'])->name('google-auth');
 Route::get('auth/google/call-back',[CustomerController::class,'callbackGoogle']);
 
+Route::get('/', function () {
+    Mail::to('bjcrest123@gmail.com')
+    ->send(new HelloMail());
+});
+
+Route::get('/contact-us',[ContactController::class,'contact']);
+
+Route::post('/sendmessage',[ContactController::class,'sendEmail'])->name('contact.send');
+
